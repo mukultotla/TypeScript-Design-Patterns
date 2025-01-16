@@ -14,7 +14,7 @@ const calc = new Calculator();
 console.log(calc.add(5, 10)); // 15
 console.log(calc.add("Hello, ", "World!")); // "Hello, World!"
 
-class Circle implements Shape {
+export class Circle implements Shape {
   constructor(private radius: number) {}
 
   area(): number {
@@ -22,7 +22,7 @@ class Circle implements Shape {
   }
 }
 
-class Rectangle implements Shape {
+export class Rectangle implements Shape {
   constructor(private width: number, private height: number) {}
 
   area(): number {
