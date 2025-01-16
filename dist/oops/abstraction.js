@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Circle = void 0;
 class Circle {
     constructor(radius) {
         this.radius = radius;
@@ -10,6 +12,7 @@ class Circle {
         return 2 * Math.PI * this.radius;
     }
 }
+exports.Circle = Circle;
 class Rectangle {
     constructor(width, height) {
         this.width = width;
