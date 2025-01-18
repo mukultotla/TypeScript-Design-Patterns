@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Dog = void 0;
 class Animal {
     constructor(name) {
         this.name = name;
@@ -12,6 +14,7 @@ class Dog extends Animal {
         console.log(`${this.name} barks.`);
     }
 }
+exports.Dog = Dog;
 class Cat extends Animal {
     makeSound() {
         console.log(`${this.name} meows.`);
