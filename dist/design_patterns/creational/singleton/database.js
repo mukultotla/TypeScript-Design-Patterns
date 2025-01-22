@@ -44,6 +44,6 @@ const instance1 = DatabaseConnection.getInstance();
 instance1.connectToDB();
 instance1.execQuery("SELECT * FROM TABLE");
 const instance2 = DatabaseConnection.getInstance();
-instance2.connectToDB();
+// instance2.connectToDB(); // throws Error
 instance2.disconnectToDB();
 console.log(instance1 === instance2);
