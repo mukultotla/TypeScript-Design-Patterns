@@ -21,7 +21,7 @@ exports.Car = Car;
 const car1 = new Car("Sedan", "Red");
 car1.displayDetails(); // Car Model: Sedan, Color: Red
 // Clone the car1 object
-const car2 = car1.clone();
+const car2 = car1.clone(); // object1.clone
 car2.changeColor("Blue"); // Modify the clone without affecting the original
 car2.displayDetails(); // Car Model: Sedan, Color: Blue
 // Original remains unchanged

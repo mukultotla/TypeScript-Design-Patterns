@@ -8,7 +8,6 @@ class DocumentPrototype {
         this.format = format;
         this.metadata = {
             author: author,
-            created: new Date()
         };
     }
     clone() {
@@ -25,7 +24,7 @@ class DocumentPrototype {
 exports.DocumentPrototype = DocumentPrototype;
 // Usage example
 const originalDoc = new DocumentPrototype("Hello World", "txt", "John");
-const clonedDoc = originalDoc.clone();
+const clonedDoc = originalDoc.clone(); // Object.clone
 clonedDoc.modify("Hello Universe");
 console.log(originalDoc.getDetails());
 console.log(clonedDoc.getDetails());
