@@ -6,7 +6,7 @@ class Vehicle {
   }
 }
 
-class Car extends Vehicle {
+export class Car extends Vehicle {
   constructor(brand: string, public model: string) {
     super(brand); // Call the parent class constructor
   }

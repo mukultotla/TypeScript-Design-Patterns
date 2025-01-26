@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Car = void 0;
 class Vehicle {
     constructor(brand) {
         this.brand = brand;
@@ -17,6 +19,7 @@ class Car extends Vehicle {
         console.log(`${this.brand} ${this.model} car is now running.`);
     }
 }
+exports.Car = Car;
 // Usage
 const car = new Car("Toyota", "Corolla");
 car.start();
